@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 #btn{
     background-color: blanchedalmond;
     width: 100px;
