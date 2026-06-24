@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 500vh;
+    width: 100vw;
+    background-color: darkcyan;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#relative{
+    background-color: blueviolet;
+    position:relative;
+    left: 100px;
+}
+
+#absolute{
+    background-color: chocolate;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#fixed{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: burlywood;
+}
+
+#sticky{
+    position: sticky;
+    top: 10px;
+    background-color: coral;
+}
