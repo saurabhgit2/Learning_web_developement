@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saurabh — Developer in Progress</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <span class="logo-bracket">&lt;</span>saurabh<span class="logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>about</a>
+      <a href="#projects" data-nav>projects</a>
+      <a href="#skills" data-nav>skills</a>
+      <a href="#contact" data-nav>contact</a>
+      <a href="https://github.com/saurabhgit2" class="nav-cta" target="_blank" rel="noopener">github →</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">// status: actively committing</p>
+      <h1 class="hero-title">
+        Building in public,<br>
+        <span class="accent">one commit</span> at a time.
+      </h1>
+      <p class="hero-sub">
+        I'm Saurabh — a developer learning by shipping. Python scripts, Git workflows,
+        OOP experiments, and a portfolio that documents the climb instead of hiding it.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">view projects</a>
+        <a href="https://github.com/saurabhgit2" class="btn btn-ghost" target="_blank" rel="noopener">@saurabhgit2</a>
+      </div>
+    </div>
+
+    <div class="hero-graph">
+      <div class="graph-card">
+        <div class="graph-card-head">
+          <span class="dot"></span>
+          <span class="graph-label" id="graphLabel">contribution activity</span>
+        </div>
+        <div class="graph-grid" id="contribGrid" aria-hidden="true"></div>
+        <div class="graph-legend">
+          <span>less</span>
+          <span class="legend-swatch l0"></span>
+          <span class="legend-swatch l1"></span>
+          <span class="legend-swatch l2"></span>
+          <span class="legend-swatch l3"></span>
+          <span class="legend-swatch l4"></span>
+          <span>more</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-cue" aria-hidden="true">scroll<span>↓</span></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <p class="section-tag">01 / about</p>
+    <div class="about-grid">
+      <div class="about-copy">
+        <h2>Still early. Still pushing commits anyway.</h2>
+        <p>
+          Most portfolios perform expertise. Mine is closer to a changelog — a record of
+          actually learning to code, version by version. It started with the basics: setting up
+          Git, pushing a first repo, breaking things locally before pushing them anywhere public.
+        </p>
+        <p>
+          From there: small Python programs to nail down logic and syntax, then a deliberate
+          step into object-oriented design to move past "scripts that work" and toward "code
+          that's structured." Every repository below is a real checkpoint, not a polished
+          showcase — which is the point.
+        </p>
+      </div>
+      <div class="about-terminal">
+        <div class="terminal-bar">
+          <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+          <span class="terminal-title">about.py</span>
+        </div>
+        <pre class="terminal-body"><code><span class="tk-kw">class</span> <span class="tk-cls">Developer</span>:
+    <span class="tk-kw">def</span> <span class="tk-fn">__init__</span>(<span class="tk-self">self</span>):
+        <span class="tk-self">self</span>.name = <span class="tk-str">"Saurabh"</span>
+        <span class="tk-self">self</span>.focus = [<span class="tk-str">"Python"</span>, <span class="tk-str">"OOP"</span>, <span class="tk-str">"Git"</span>]
+        <span class="tk-self">self</span>.status = <span class="tk-str">"learning in public"</span>
+
+    <span class="tk-kw">def</span> <span class="tk-fn">ship</span>(<span class="tk-self">self</span>):
+        <span class="tk-kw">while</span> <span class="tk-kw">True</span>:
+            <span class="tk-self">self</span>.commit()
+            <span class="tk-self">self</span>.improve()
+</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="section-inner">
+    <p class="section-tag">02 / projects</p>
+    <h2 class="section-title">Repositories worth a look</h2>
+    <p class="section-desc">Pulled straight from the commit history — each one marks a different stage of learning.</p>
+
+    <div class="repo-grid" id="repoGrid">
+      <!-- populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="section-inner">
+    <p class="section-tag">03 / skills</p>
+    <h2 class="section-title">Current stack</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul>
+          <li><span>Python</span><div class="bar"><div class="bar-fill" style="--w:82%"></div></div></li>
+          <li><span>HTML / CSS</span><div class="bar"><div class="bar-fill" style="--w:70%"></div></div></li>
+          <li><span>JavaScript</span><div class="bar"><div class="bar-fill" style="--w:48%"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Concepts</h3>
+        <ul>
+          <li><span>OOP fundamentals</span><div class="bar"><div class="bar-fill" style="--w:65%"></div></div></li>
+          <li><span>Version control (Git)</span><div class="bar"><div class="bar-fill" style="--w:75%"></div></div></li>
+          <li><span>Problem solving</span><div class="bar"><div class="bar-fill" style="--w:60%"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <ul>
+          <li><span>GitHub</span><div class="bar"><div class="bar-fill" style="--w:78%"></div></div></li>
+          <li><span>VS Code</span><div class="bar"><div class="bar-fill" style="--w:80%"></div></div></li>
+          <li><span>Command line</span><div class="bar"><div class="bar-fill" style="--w:55%"></div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-inner contact-inner">
+    <p class="section-tag">04 / contact</p>
+    <h2 class="section-title">git push origin <span class="accent">collaboration</span></h2>
+    <p class="section-desc">Open to feedback, pair-learning, or just talking through code. Reach out.</p>
+    <div class="contact-links">
+      <a href="https://github.com/saurabhgit2" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="22" height="22" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        </span>
+        <span>
+          <strong>GitHub</strong>
+          <small>@saurabhgit2</small>
+        </span>
+      </a>
+      <a href="mailto:hello@example.com" class="contact-card">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+        </span>
+        <span>
+          <strong>Email</strong>
+          <small>hello@example.com</small>
+        </span>
+      </a>
+      <a href="#" class="contact-card">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 21v-7a4 4 0 0 1 8 0v7M10 9h0"/></svg>
+        </span>
+        <span>
+          <strong>LinkedIn</strong>
+          <small>add your profile link</small>
+        </span>
+      </a>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Built with HTML, CSS &amp; JS — no framework, just commits. © <span id="year"></span> Saurabh.</p>
+  </footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
