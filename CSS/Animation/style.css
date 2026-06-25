@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    height: 100px;
+    width: 100px;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+    border-bottom: 10px solid red;
+    border-left: 10px solid red;
+    border-radius: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 100px;
+    left: 400px;
+    animation: colorAnimate 1s linear infinite normal ;
+}
+
+@keyframes colorAnimate {
+     from{transform: rotate(0deg);}   
+     to{transform: rotate(360deg);} 
+}
